@@ -1,0 +1,36 @@
+<h1><a href="/{{startIndex}}" class="previous round">&#8249;</a></h1> 
+<h2 style="text-align:center;">Ticket Details</h2>
+<center>
+   
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row align-items-center">
+
+
+      <div class="col-lg-8">
+        <h1 class="display-5 fw-bold lh-1 mb-3">{{ticket.subject}}</h1>
+        <p class="lead"><small class="text-muted">Description: </small>{{ticket.description}}</p>
+
+      </div>
+            <div class="col-10 col-sm-8 col-lg-4">
+         
+           {{#if ticket.type}}<p class="lead"><small class="text-muted">Type: </small>{{ticket.type}}</p>{{/if}}
+          {{#if ticket.created_at}} <p class="lead"><small class="text-muted">Created at: </small>{{ changeDateFormat ticket.created_at}}</p>{{/if}}
+            {{#if ticket.updated_at}}<p class="lead"><small class="text-muted">Last Updated: </small>{{ changeDateFormat ticket.updated_at}}</p>{{/if}}
+             {{#if ticket.priority}}<p class="lead"><small class="text-muted">Priority: </small>{{ticket.priority}}</p>{{/if}}
+             {{#if ticket.status}} <p class="lead"><small class="text-muted">Status: </small>{{ticket.status}}</p>{{/if}}
+      </div>
+    </div>
+
+  </div>
+  </center>
+  {{#if ticket.tags}}
+      <div>
+          <small >Tags: </small>
+           {{#each ticket.tags}}
+         <span class="badge badge-info">{{this}}</span>
+         <span class="badge badge-info">{{this}}</span>
+          {{/each}}
+
+
+        </div>
+        {{/if}}

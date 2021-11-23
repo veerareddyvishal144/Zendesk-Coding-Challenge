@@ -1,0 +1,30 @@
+<center>
+ <h1>List of Tickets</h1>
+ </center>
+{{#each tickets}}
+<div class="list-group">
+  <a href="/detail/{{this.id}}" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h4 >{{this.subject}}</h4>
+      <small>{{changeDateFormat this.created_at}}</small>
+    </div>
+    
+    <p class="mb-1">{{trimString this.description}}....</p>
+    <small>{{this.priority}}</small>
+  </a>
+  <div class="b-example-divider"></div>
+  {{/each}}
+</div>
+{{#if hasNext }}
+<a href="/{{endIndex}}"  class="btn btn-primary btn-sm" >Next</a>
+{{/if}}
+{{#if hasPrev }}
+<a href="/{{prevIndex}}"  class="btn btn-danger btn-sm" >Previous</a>
+{{/if}}
+<style>
+    .container {
+  max-width: 960px;
+  padding: 2%;
+  border-radius: 2px;
+}
+    </style>
