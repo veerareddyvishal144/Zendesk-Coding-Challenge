@@ -1,7 +1,7 @@
 var { getEndIndex, getHasNext, getTickets } = require('../utilities/util');
 
 module.exports = function (app) {
-    var url = `https://${process.env.ZENDESK_API_BASE_URL}/api/v2/tickets`;
+    var url = `${process.env.ZENDESK_API_BASE_URL}/api/v2/tickets`;
 
     app.use('/favicon.ico', (req, res, next) => {
 
