@@ -18,7 +18,7 @@ It is a web based Javascript applicatoin built wth NodeJs on server side, hadnle
 
 
 
-##Installation
+## Installation
 1. **git clone** https://github.com/vishalveerareddy/Zendesk-Coding-Challenge
 2. Run **npm install**
 3. Open **pwd.env** file and edit the property ZENDESK_EMAIL_AUTH variable to Basic email:password  in bsae 64 format
