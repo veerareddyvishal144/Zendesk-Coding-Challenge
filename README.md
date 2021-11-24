@@ -1,4 +1,4 @@
-It is a web based Javascript applicatoin built wth NodeJs on server side, hadnlebars as templating engine.
+It is a web based Javascript application built wth NodeJs on server side, handlebar as templating engine.
 ### Features
 
 - Make a rest api call to /api/v2/tickets api and fetches all the tickets;
