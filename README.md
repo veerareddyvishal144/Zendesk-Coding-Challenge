@@ -21,9 +21,9 @@ It is a web based Javascript applicatoin built wth NodeJs on server side, hadnle
 ## Installation
 1. **git clone** https://github.com/vishalveerareddy/Zendesk-Coding-Challenge
 2. Run **npm install**
-3. Open **pwd.env** file and edit the property ZENDESK_EMAIL_AUTH variable to Basic email:password  in bsae 64 format
-4. Edit th property ZENDESK_API_BASE_URL with url of zendesk admin
-5. Change the PORT variable if needed
+3. Open **pwd.env** file and edit the property **ZENDESK_EMAIL_AUTH** variable to Basic email:password  in base 64 format
+4. Edit th property **ZENDESK_API_BASE_URL** with url of zendesk admin
+5. Change the **PORT** variable if needed
 6. Run the application with **node app.js**
 7. Goto **locahost:port** and see the list of tickets
 8. Click on each ticket to view it in detail
